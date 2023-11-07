@@ -8,4 +8,8 @@
 import Foundation
 
 print("Hello, World!")
-
+// add 15 to a
+var a = 5
+a += 7
+print("a is now \(a)")
+ 
