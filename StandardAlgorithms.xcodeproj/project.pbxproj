@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C33A0BDF2AFE950100DA7CDC /* SortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0BDE2AFE950100DA7CDC /* SortingTests.swift */; };
-		C33A0BE12AFE965700DA7CDC /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0BE02AFE965700DA7CDC /* Sorting.swift */; };
-		C33A0BE22AFE971300DA7CDC /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0BE02AFE965700DA7CDC /* Sorting.swift */; };
+		C39353742B03818100EBE86C /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0BE02AFE965700DA7CDC /* Sorting.swift */; };
+		C39353752B03836700EBE86C /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0BE02AFE965700DA7CDC /* Sorting.swift */; };
 		C3D24AD12AFA48290051B7CF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D24AD02AFA48290051B7CF /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +28,7 @@
 /* Begin PBXFileReference section */
 		C33A0BDE2AFE950100DA7CDC /* SortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTests.swift; sourceTree = "<group>"; };
 		C33A0BE02AFE965700DA7CDC /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		C39353762B038E0600EBE86C /* StandardAlgorithms.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StandardAlgorithms.xctestplan; sourceTree = "<group>"; };
 		C3D24ACD2AFA48290051B7CF /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D24AD02AFA48290051B7CF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C3D24ADB2AFA52ED0051B7CF /* StandardAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +55,7 @@
 		C3D24AC42AFA48290051B7CF = {
 			isa = PBXGroup;
 			children = (
+				C39353762B038E0600EBE86C /* StandardAlgorithms.xctestplan */,
 				C3D24ACF2AFA48290051B7CF /* StandardAlgorithms */,
 				C3D24ADC2AFA52ED0051B7CF /* StandardAlgorithmsTests */,
 				C3D24ACE2AFA48290051B7CF /* Products */,
@@ -175,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33A0BE12AFE965700DA7CDC /* Sorting.swift in Sources */,
+				C39353742B03818100EBE86C /* Sorting.swift in Sources */,
 				C3D24AD12AFA48290051B7CF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33A0BE22AFE971300DA7CDC /* Sorting.swift in Sources */,
+				C39353752B03836700EBE86C /* Sorting.swift in Sources */,
 				C33A0BDF2AFE950100DA7CDC /* SortingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

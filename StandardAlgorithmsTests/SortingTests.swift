@@ -28,4 +28,18 @@ final class SortingTests: XCTestCase {
             XCTAssertEqual(actual,testCase.expected)
         }
     }
+    func testQuickSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
+        //arrange
+        let sorting = Sorting()
+        
+        let testCases = [(data: [6,1,3,7,4], expected: [1,3,4,6,7]),
+                         (data: [15,1,3,2,6], expected: [1,2,3,6,15]),
+                         (data: [7,4], expected: [4,7])]
+        //act
+        //assert
+        for testCase in testCases {
+            let actual = sorting.quickSort(0,testCase.data)
+            XCTAssertEqual(actual,testCase.expected)
+        }
+    }
 }

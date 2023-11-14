@@ -21,5 +21,53 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7EC3FA91-DD01-4CA6-BB6C-13F59CFCCB57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StandardAlgorithms/Sorting.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "quickSort(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7EC3FA91-DD01-4CA6-BB6C-13F59CFCCB57 - 32c04814d3e2b79a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StandardAlgorithmsTests.Sorting.quickSort(Swift.Int, Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "StandardAlgorithmsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parker.f/Documents/StandardAlgorithms/StandardAlgorithms/Sorting.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "331">
+               </Location>
+               <Location
+                  uuid = "7EC3FA91-DD01-4CA6-BB6C-13F59CFCCB57 - 32c04814d3e2b79a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StandardAlgorithmsTests.Sorting.quickSort(Swift.Int, Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "StandardAlgorithmsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parker.f/Documents/StandardAlgorithms/StandardAlgorithms/Sorting.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
