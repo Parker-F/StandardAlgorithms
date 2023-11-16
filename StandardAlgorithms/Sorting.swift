@@ -16,12 +16,14 @@ class Sorting {
         }
     }
     func quickSort(_ numbers: [Int]) -> [Int] {
+        if numbers.count <= 1 {
+            return numbers
+        }
         let pivot = numbers[0]
         
         var left = [Int]()
         var right = [Int]()
         var sorted = [Int]()
-        // can I fix for u ?
         for i in 1..<numbers.count {
             if numbers[i] < pivot {
                 left.append(numbers[i])
@@ -29,16 +31,14 @@ class Sorting {
                 right.append(numbers[i])
             }
         }
-        while left.count != 1{
-            quickSort(left)
-        }
-        while right.count != 1{
-            quickSort(right)
-        }
-        sorted.append(contentsOf: left)
-        sorted.append(pivot)
-        sorted.append(contentsOf: right)
+        //hello?
+        let sortedLeft = quickSort(left)
+        let sortedRight = quickSort(right)
         
+        sorted.append(contentsOf: sortedLeft)
+        sorted.append(pivot)
+        sorted.append(contentsOf: sortedRight)
+        return sorted
+
         }
-        return sorted.sort
 }

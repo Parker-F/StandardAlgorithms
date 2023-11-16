@@ -38,7 +38,7 @@ final class SortingTests: XCTestCase {
         //act
         //assert
         for testCase in testCases {
-            let actual = sorting.quickSort(0,testCase.data)
+            let actual = sorting.quickSort(testCase.data)
             XCTAssertEqual(actual,testCase.expected)
         }
     }
