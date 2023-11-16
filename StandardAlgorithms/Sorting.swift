@@ -15,31 +15,30 @@ class Sorting {
             return [1,3,4,5,7]
         }
     }
-    func quickSort(_ j: Int, _ numbers: [Int]) -> [Int] {
-        var count = j
-        let pivot = numbers[count]
+    func quickSort(_ numbers: [Int]) -> [Int] {
+        let pivot = numbers[0]
         
         var left = [Int]()
         var right = [Int]()
         var sorted = [Int]()
-        
-        for i in 1 ..<numbers.count {
+        // can I fix for u ?
+        for i in 1..<numbers.count {
             if numbers[i] < pivot {
                 left.append(numbers[i])
             } else {
                 right.append(numbers[i])
             }
         }
-        
+        while left.count != 1{
+            quickSort(left)
+        }
+        while right.count != 1{
+            quickSort(right)
+        }
         sorted.append(contentsOf: left)
         sorted.append(pivot)
         sorted.append(contentsOf: right)
         
-        if count != numbers.count {
-            quickSort(count,sorted)
-            count += 1
         }
-        return sorted
-    }
-    
+        return sorted.sort
 }
