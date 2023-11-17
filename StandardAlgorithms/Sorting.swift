@@ -8,6 +8,43 @@
 import Foundation
 
 class Sorting {
+    func mergeSort(_ numbers: [Int]) -> [Int] {
+        if numbers.count <= 1 {
+            return numbers
+        }
+        let mid = numbers.count / 2
+        let left = Array(numbers[..<mid])
+        let right = Array(numbers[mid...])
+        
+        return merge(mergeSort(left), mergeSort(right))
+    }
+    func merge(_ left: [Int], _ right: [Int]) -> [Int] {
+        var sorted: [Int] = []
+        var leftIndex = 0
+        var rightIndex = 0
+        
+        while leftIndex < left.count && rightIndex < right.count {
+            if left[leftIndex] < right[rightIndex] {
+                sorted.append(left[leftIndex])
+                leftIndex += 1
+            } else {
+                sorted.append(right[rightIndex])
+            }
+                
+        }
+        
+        while leftIndex < left.count {
+            sorted.append(left[leftIndex])
+            leftIndex += 1
+        }
+        
+        while rightIndex < right.count {
+            sorted.append(right[rightIndex])
+            rightIndex += 1
+        }
+        
+        return sorted
+    }
     func bubbleSort(_ numbers: [Int]) -> [Int] {
         if numbers[0] == 2 {
             return [1,2,3,4,7]

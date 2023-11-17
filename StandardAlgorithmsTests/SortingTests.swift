@@ -13,22 +13,7 @@ final class SortingTests: XCTestCase {
         let data: [Int]
         let expected: [Int]
     }
-    
-    func testBubbleSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
-        //arrange
-        let sorting = Sorting()
-        
-        let testCases = [(data: [5,1,3,7,4], expected: [1,3,4,5,7]),
-                         (data: [2,1,3,7,4], expected: [1,2,3,4,7]),
-                         (data: [7,4], expected: [4,7])]
-        //act
-        //assert
-        for testCase in testCases {
-            let actual = sorting.bubbleSort(testCase.data)
-            XCTAssertEqual(actual,testCase.expected)
-        }
-    }
-    func testQuickSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
+    func testMergeSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
         //arrange
         let sorting = Sorting()
         
@@ -38,8 +23,36 @@ final class SortingTests: XCTestCase {
         //act
         //assert
         for testCase in testCases {
-            let actual = sorting.quickSort(testCase.data)
+            let actual = sorting.mergeSort(testCase.data)
             XCTAssertEqual(actual,testCase.expected)
+        }
+        func testBubbleSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
+            //arrange
+            let sorting = Sorting()
+            
+            let testCases = [(data: [5,1,3,7,4], expected: [1,3,4,5,7]),
+                             (data: [2,1,3,7,4], expected: [1,2,3,4,7]),
+                             (data: [7,4], expected: [4,7])]
+            //act
+            //assert
+            for testCase in testCases {
+                let actual = sorting.bubbleSort(testCase.data)
+                XCTAssertEqual(actual,testCase.expected)
+            }
+        }
+        func testQuickSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
+            //arrange
+            let sorting = Sorting()
+            
+            let testCases = [(data: [6,1,3,7,4], expected: [1,3,4,6,7]),
+                             (data: [15,1,3,2,6], expected: [1,2,3,6,15]),
+                             (data: [7,4], expected: [4,7])]
+            //act
+            //assert
+            for testCase in testCases {
+                let actual = sorting.quickSort(testCase.data)
+                XCTAssertEqual(actual,testCase.expected)
+            }
         }
     }
 }
