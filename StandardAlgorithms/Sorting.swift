@@ -46,10 +46,21 @@ class Sorting {
         return sorted
     }
     func bubbleSort(_ numbers: [Int]) -> [Int] {
-        if numbers[0] == 2 {
-            return [1,2,3,4,7]
+        if numbers.count <= 1 {
+            return numbers
         } else {
-            return [1,3,4,5,7]
+            var sorted
+            let length = sorted.count-2
+            for _ in 0...length{
+                for i in 0...length{
+                    if sorted[i] > sorted[i+1]{
+                        let temp = sorted[i+1]
+                        sorted[i+1] = sorted[i]
+                        sorted[i] = temp
+                    }
+                }
+            }
+            return numbers
         }
     }
     func quickSort(_ numbers: [Int]) -> [Int] {
