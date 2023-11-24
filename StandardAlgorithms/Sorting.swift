@@ -49,7 +49,7 @@ class Sorting {
         if numbers.count <= 1 {
             return numbers
         } else {
-            var sorted
+            var sorted = numbers
             let length = sorted.count-2
             for _ in 0...length{
                 for i in 0...length{
